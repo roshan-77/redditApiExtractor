@@ -10,7 +10,7 @@ body{
 
 
 .main-view{
-    background-image: url(/img/background-img.png);
+    background-image: url(img/background-img.png);
     background-repeat: no-repeat;
     background-attachment:scroll;
     background-position: center;
