@@ -25,11 +25,16 @@ body{
 }
 
 .navigation .nav-items{
-    list-style: none;
+    list-style-type: none;
     display: flex;
     margin-bottom: 0;
     justify-content: space-between;
     padding: 0 5px;
+}
+
+.nav-items> li>a{
+    text-decoration: none;
+    color: white;
 }
 
 
@@ -53,7 +58,7 @@ body{
 @media screen and (min-width : 500px) {
 
     .navigation .nav-items{
-        list-style: none;
+        
         display: flex;
         margin-bottom: 0;
         justify-content: space-around;
