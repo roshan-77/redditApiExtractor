@@ -21,28 +21,22 @@ body{
 .navigation{
     background-color: black;
     color: white;
-    padding: 20px 0;
+    padding: 10px 0;
 }
 
 .navigation .nav-items{
     list-style: none;
     display: flex;
     margin-bottom: 0;
+    justify-content: space-between;
+    padding: 0 5px;
 }
 
-.nav-items li{
-    flex: 1 1 0;
-}
 
 .search-section{
     margin: 200px 0;
 }
 
-.search-section input{
-    width: 400px;
-    padding: 10px;
-    border-radius: 5px;
-}
 
 .search-section button{
     padding: 10px;
@@ -50,6 +44,31 @@ body{
     width: 100px;
 }
 
+.search-website{
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+@media screen and (min-width : 500px) {
+
+    .navigation .nav-items{
+        list-style: none;
+        display: flex;
+        margin-bottom: 0;
+        justify-content: space-around;
+        padding: 0 5px;
+    }
+    .nav-items li:first-child{
+        font-size: 20px;
+    }
+    
+    .search-website{
+        max-width: 400px;
+        padding: 10px;
+        border-radius: 5px;
+    }
+}
 /*----------Result Div---------*/
 
 .result{

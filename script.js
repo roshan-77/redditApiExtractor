@@ -61,9 +61,12 @@ function required_text(data,saveGlobal=false){
 
             let card_text = document.createElement("p");
             card_text.classList.add("card-text");
-            card_text.innerText = (data.data.children[i].data.selftext.slice(0,200)+'...')
-            card_body.appendChild(card_text);
-            card.append(card_body)
+            card_text.innerText = (data.data.children[i].data.selftext.slice(0,200))
+                if(card_text.innerText !== ""){
+                    card_body.appendChild(card_text);
+                    card.append(card_body)
+                }
+            
             }else{
             console.log("This should be false")
             }
